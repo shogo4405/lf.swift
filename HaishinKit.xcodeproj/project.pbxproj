@@ -72,7 +72,7 @@
 		294B2D3323785E3800CE7BDC /* CircularBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294B2D3123785E3800CE7BDC /* CircularBuffer.swift */; };
 		294B2D3423785E3800CE7BDC /* CircularBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294B2D3123785E3800CE7BDC /* CircularBuffer.swift */; };
 		294CC9B422D9BEC000F9DD5C /* DisplayLink-macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294CC9B322D9BEC000F9DD5C /* DisplayLink-macOS.swift */; };
-		295018201FFA1BD700358E10 /* AudioConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2950181F1FFA1BD700358E10 /* AudioConverterTests.swift */; };
+		295018201FFA1BD700358E10 /* AudioCodecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2950181F1FFA1BD700358E10 /* AudioCodecTests.swift */; };
 		295018221FFA1C9D00358E10 /* SinWaveUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295018211FFA1C9D00358E10 /* SinWaveUtil.swift */; };
 		295074301E4620FF007F15A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29205CBD1E461F4E009D3FFF /* Main.storyboard */; };
 		295074311E462105007F15A4 /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2950742E1E4620B7007F15A4 /* PreferenceViewController.swift */; };
@@ -395,8 +395,8 @@
 		BC94E52E264146530094C169 /* MP4ReaderConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC94E52C264146120094C169 /* MP4ReaderConvertible.swift */; };
 		BC94E52F264146540094C169 /* MP4ReaderConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC94E52C264146120094C169 /* MP4ReaderConvertible.swift */; };
 		BC94E530264146540094C169 /* MP4ReaderConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC94E52C264146120094C169 /* MP4ReaderConvertible.swift */; };
-		BC94E53A264192B00094C169 /* MP4FileHandleTests2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAD0C10263ED28500ADFB80 /* MP4FileHandleTests2.swift */; };
-		BC94E53B2641984F0094C169 /* MP4FileHandleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA97BC7263AF8F70027213C /* MP4FileHandleTests.swift */; };
+		BC94E53A264192B00094C169 /* MP4FileReaderTests2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAD0C10263ED28500ADFB80 /* MP4FileReaderTests2.swift */; };
+		BC94E53B2641984F0094C169 /* MP4FileReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA97BC7263AF8F70027213C /* MP4FileReaderTests.swift */; };
 		BC9CFA9323BDE8B700917EEF /* NetStreamRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9CFA9223BDE8B700917EEF /* NetStreamRenderer.swift */; };
 		BC9CFA9423BDE8B700917EEF /* NetStreamRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9CFA9223BDE8B700917EEF /* NetStreamRenderer.swift */; };
 		BC9CFA9523BDE8B700917EEF /* NetStreamRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9CFA9223BDE8B700917EEF /* NetStreamRenderer.swift */; };
@@ -472,6 +472,24 @@
 		BCB9773F2621812800C9A649 /* AVCFormatStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB9773E2621812800C9A649 /* AVCFormatStream.swift */; };
 		BCB977402621812800C9A649 /* AVCFormatStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB9773E2621812800C9A649 /* AVCFormatStream.swift */; };
 		BCB977412621812800C9A649 /* AVCFormatStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB9773E2621812800C9A649 /* AVCFormatStream.swift */; };
+		BCC1A6992642BE8100661156 /* MP4WriterConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1A6982642BE8100661156 /* MP4WriterConvertible.swift */; };
+		BCC1A69A2642BE8100661156 /* MP4WriterConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1A6982642BE8100661156 /* MP4WriterConvertible.swift */; };
+		BCC1A69B2642BE8100661156 /* MP4WriterConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1A6982642BE8100661156 /* MP4WriterConvertible.swift */; };
+		BCC1A69D2642BEAC00661156 /* MP4FragmentedWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1A69C2642BEAC00661156 /* MP4FragmentedWriter.swift */; };
+		BCC1A69E2642BEAC00661156 /* MP4FragmentedWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1A69C2642BEAC00661156 /* MP4FragmentedWriter.swift */; };
+		BCC1A69F2642BEAC00661156 /* MP4FragmentedWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1A69C2642BEAC00661156 /* MP4FragmentedWriter.swift */; };
+		BCC1A6A12642CE2700661156 /* MP4TrackFragmentBox.Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1A6A02642CE2700661156 /* MP4TrackFragmentBox.Builder.swift */; };
+		BCC1A6A22642CE2700661156 /* MP4TrackFragmentBox.Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1A6A02642CE2700661156 /* MP4TrackFragmentBox.Builder.swift */; };
+		BCC1A6A32642CE2700661156 /* MP4TrackFragmentBox.Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1A6A02642CE2700661156 /* MP4TrackFragmentBox.Builder.swift */; };
+		BCC1A6A52642D2A600661156 /* MP4SegmentFile.Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1A6A42642D2A600661156 /* MP4SegmentFile.Builder.swift */; };
+		BCC1A6A62642D2A600661156 /* MP4SegmentFile.Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1A6A42642D2A600661156 /* MP4SegmentFile.Builder.swift */; };
+		BCC1A6A72642D2A600661156 /* MP4SegmentFile.Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1A6A42642D2A600661156 /* MP4SegmentFile.Builder.swift */; };
+		BCC1A6A92642D32A00661156 /* MP4File.Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1A6A82642D32A00661156 /* MP4File.Builder.swift */; };
+		BCC1A6AA2642D32A00661156 /* MP4File.Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1A6A82642D32A00661156 /* MP4File.Builder.swift */; };
+		BCC1A6AB2642D32A00661156 /* MP4File.Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1A6A82642D32A00661156 /* MP4File.Builder.swift */; };
+		BCC1A6AD2642D83100661156 /* MP4MovieFragmentBox.Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1A6AC2642D83100661156 /* MP4MovieFragmentBox.Builder.swift */; };
+		BCC1A6AE2642D83100661156 /* MP4MovieFragmentBox.Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1A6AC2642D83100661156 /* MP4MovieFragmentBox.Builder.swift */; };
+		BCC1A6AF2642D83100661156 /* MP4MovieFragmentBox.Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC1A6AC2642D83100661156 /* MP4MovieFragmentBox.Builder.swift */; };
 		BCC9E9092636FF7400948774 /* NetSocketCycleBufferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC9E9082636FF7400948774 /* NetSocketCycleBufferTests.swift */; };
 		BCD1DC3A260627C300A1C593 /* Logboard.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC34DFD125EBB12C005F975A /* Logboard.xcframework */; };
 		BCFB355524FA27EA00DC5108 /* PlaybackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB355324FA275600DC5108 /* PlaybackViewController.swift */; };
@@ -622,7 +640,7 @@
 		294852551D84BFAD002DE492 /* RTMPTSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTMPTSocket.swift; sourceTree = "<group>"; };
 		294B2D3123785E3800CE7BDC /* CircularBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularBuffer.swift; sourceTree = "<group>"; };
 		294CC9B322D9BEC000F9DD5C /* DisplayLink-macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DisplayLink-macOS.swift"; sourceTree = "<group>"; };
-		2950181F1FFA1BD700358E10 /* AudioConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioConverterTests.swift; sourceTree = "<group>"; };
+		2950181F1FFA1BD700358E10 /* AudioCodecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCodecTests.swift; sourceTree = "<group>"; };
 		295018211FFA1C9D00358E10 /* SinWaveUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinWaveUtil.swift; sourceTree = "<group>"; };
 		2950742E1E4620B7007F15A4 /* PreferenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
 		295747901E37AC1000EF056E /* RTMPStreamDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTMPStreamDelegate.swift; sourceTree = "<group>"; };
@@ -777,13 +795,13 @@
 		BCA97BBA263AD0520027213C /* MP4AudioSampleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP4AudioSampleEntry.swift; sourceTree = "<group>"; };
 		BCA97BBE263AD1920027213C /* MP4SampleDescriptionBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP4SampleDescriptionBox.swift; sourceTree = "<group>"; };
 		BCA97BC2263AD2280027213C /* MP4VisualSampleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP4VisualSampleEntry.swift; sourceTree = "<group>"; };
-		BCA97BC7263AF8F70027213C /* MP4FileHandleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MP4FileHandleTests.swift; path = Tests/MP4FileHandleTests.swift; sourceTree = SOURCE_ROOT; };
+		BCA97BC7263AF8F70027213C /* MP4FileReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MP4FileReaderTests.swift; path = Tests/MP4FileReaderTests.swift; sourceTree = SOURCE_ROOT; };
 		BCA97BDE263BC7770027213C /* MP4FileTypeBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP4FileTypeBox.swift; sourceTree = "<group>"; };
 		BCA97BF3263C390E0027213C /* CustomXmlStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomXmlStringConvertible.swift; sourceTree = "<group>"; };
 		BCA97C09263D80F40027213C /* MP4SampleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP4SampleEntry.swift; sourceTree = "<group>"; };
 		BCA97C11263D8C850027213C /* MP4FullBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MP4FullBox.swift; sourceTree = "<group>"; };
 		BCAD0BFF263E968400ADFB80 /* MP4FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP4FileReader.swift; sourceTree = "<group>"; };
-		BCAD0C10263ED28500ADFB80 /* MP4FileHandleTests2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP4FileHandleTests2.swift; sourceTree = "<group>"; };
+		BCAD0C10263ED28500ADFB80 /* MP4FileReaderTests2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP4FileReaderTests2.swift; sourceTree = "<group>"; };
 		BCAD0C16263ED67F00ADFB80 /* SampleVideo_360x240_5mb@m4v.m3u8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SampleVideo_360x240_5mb@m4v.m3u8"; sourceTree = "<group>"; };
 		BCAD0C17263ED67F00ADFB80 /* SampleVideo_360x240_5mb@m4v */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SampleVideo_360x240_5mb@m4v"; sourceTree = "<group>"; };
 		BCAD0C1A263EE1D000ADFB80 /* MP4Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP4Util.swift; sourceTree = "<group>"; };
@@ -792,6 +810,12 @@
 		BCB976D026107B1200C9A649 /* TSAdaptationExtensionField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSAdaptationExtensionField.swift; sourceTree = "<group>"; };
 		BCB976DE26107B5600C9A649 /* TSAdaptationField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSAdaptationField.swift; sourceTree = "<group>"; };
 		BCB9773E2621812800C9A649 /* AVCFormatStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCFormatStream.swift; sourceTree = "<group>"; };
+		BCC1A6982642BE8100661156 /* MP4WriterConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP4WriterConvertible.swift; sourceTree = "<group>"; };
+		BCC1A69C2642BEAC00661156 /* MP4FragmentedWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP4FragmentedWriter.swift; sourceTree = "<group>"; };
+		BCC1A6A02642CE2700661156 /* MP4TrackFragmentBox.Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP4TrackFragmentBox.Builder.swift; sourceTree = "<group>"; };
+		BCC1A6A42642D2A600661156 /* MP4SegmentFile.Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP4SegmentFile.Builder.swift; sourceTree = "<group>"; };
+		BCC1A6A82642D32A00661156 /* MP4File.Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP4File.Builder.swift; sourceTree = "<group>"; };
+		BCC1A6AC2642D83100661156 /* MP4MovieFragmentBox.Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MP4MovieFragmentBox.Builder.swift; sourceTree = "<group>"; };
 		BCC9E9082636FF7400948774 /* NetSocketCycleBufferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetSocketCycleBufferTests.swift; sourceTree = "<group>"; };
 		BCFB355324FA275600DC5108 /* PlaybackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackViewController.swift; sourceTree = "<group>"; };
 		BCFB355624FA37F700DC5108 /* HKPictureInPicureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKPictureInPicureController.swift; sourceTree = "<group>"; };
@@ -1042,7 +1066,7 @@
 		295018191FFA196800358E10 /* Codec */ = {
 			isa = PBXGroup;
 			children = (
-				2950181F1FFA1BD700358E10 /* AudioConverterTests.swift */,
+				2950181F1FFA1BD700358E10 /* AudioCodecTests.swift */,
 			);
 			path = Codec;
 			sourceTree = "<group>";
@@ -1325,10 +1349,13 @@
 				BCA97B91263AC5FB0027213C /* MP4ChunkOffsetBox.swift */,
 				BCA97B9A263AC7540027213C /* MP4EditListBox.swift */,
 				BCA97BB6263ACFB30027213C /* MP4ElementaryStreamDescriptorBox.swift */,
+				BCC1A6A82642D32A00661156 /* MP4File.Builder.swift */,
 				BCAD0BFF263E968400ADFB80 /* MP4FileReader.swift */,
 				BCA97BDE263BC7770027213C /* MP4FileTypeBox.swift */,
+				BCC1A69C2642BEAC00661156 /* MP4FragmentedWriter.swift */,
 				BCA97C11263D8C850027213C /* MP4FullBox.swift */,
 				BCA97B8D263AC49B0027213C /* MP4MediaHeaderBox.swift */,
+				BCC1A6AC2642D83100661156 /* MP4MovieFragmentBox.Builder.swift */,
 				BC94E4FD263FE6B80094C169 /* MP4MovieFragmentHeaderBox.swift */,
 				292D8A321D8B293300DBECE2 /* MP4Reader.swift */,
 				BC94E52C264146120094C169 /* MP4ReaderConvertible.swift */,
@@ -1336,14 +1363,17 @@
 				BCA97C09263D80F40027213C /* MP4SampleEntry.swift */,
 				BCA97BA6263AC9880027213C /* MP4SampleSizeBox.swift */,
 				BCA97B9E263AC7D60027213C /* MP4SampleToChunkBox.swift */,
+				BCC1A6A42642D2A600661156 /* MP4SegmentFile.Builder.swift */,
 				BCAD0C20263EFCEF00ADFB80 /* MP4SegmentIndexBox.swift */,
 				BCA97B96263AC6980027213C /* MP4SyncSampleBox.swift */,
 				BCA97BA2263AC86D0027213C /* MP4TimeToSampleBox.swift */,
 				BC94E505263FEA7F0094C169 /* MP4TrackFragmentBaseMediaDecodeTimeBox.swift */,
+				BCC1A6A02642CE2700661156 /* MP4TrackFragmentBox.Builder.swift */,
 				BC94E501263FE8400094C169 /* MP4TrackFragmentHeaderBox.swift */,
 				BC94E509263FEBB60094C169 /* MP4TrackRunBox.swift */,
 				BCAD0C1A263EE1D000ADFB80 /* MP4Util.swift */,
 				BCA97BC2263AD2280027213C /* MP4VisualSampleEntry.swift */,
+				BCC1A6982642BE8100661156 /* MP4WriterConvertible.swift */,
 			);
 			path = MP4;
 			sourceTree = "<group>";
@@ -1351,8 +1381,8 @@
 		BCA97BC6263AF3E20027213C /* MP4 */ = {
 			isa = PBXGroup;
 			children = (
-				BCA97BC7263AF8F70027213C /* MP4FileHandleTests.swift */,
-				BCAD0C10263ED28500ADFB80 /* MP4FileHandleTests2.swift */,
+				BCA97BC7263AF8F70027213C /* MP4FileReaderTests.swift */,
+				BCAD0C10263ED28500ADFB80 /* MP4FileReaderTests2.swift */,
 				BCAD0C1E263EE53A00ADFB80 /* MP4UtilTests.swift */,
 			);
 			path = MP4;
@@ -1774,6 +1804,7 @@
 				295891161EEB8DFC00CE51E1 /* FLVTagType.swift in Sources */,
 				BCA97C0A263D80F40027213C /* MP4SampleEntry.swift in Sources */,
 				29B876B11CD70B2800FC07DA /* RTMPMessage.swift in Sources */,
+				BCC1A6A12642CE2700661156 /* MP4TrackFragmentBox.Builder.swift in Sources */,
 				2941746B22D069B300A2944F /* AudioEffect.swift in Sources */,
 				BCB9773F2621812800C9A649 /* AVCFormatStream.swift in Sources */,
 				295891011EEB7A8B00CE51E1 /* ScalingMode.swift in Sources */,
@@ -1795,6 +1826,7 @@
 				29B876941CD70AFE00FC07DA /* SoundTransform.swift in Sources */,
 				29DF20662312A436004057C3 /* RTMPSocketCompatible.swift in Sources */,
 				29B876861CD70AE800FC07DA /* PacketizedElementaryStream.swift in Sources */,
+				BCC1A6A92642D32A00661156 /* MP4File.Builder.swift in Sources */,
 				29B876761CD70ACE00FC07DA /* HTTPRequest.swift in Sources */,
 				29B876AD1CD70B2800FC07DA /* ASClass.swift in Sources */,
 				296242611D8DB86500C451A3 /* TSReader.swift in Sources */,
@@ -1831,11 +1863,13 @@
 				293B42E92340B4840086F973 /* RTMPObjectEncoding.swift in Sources */,
 				2976A47E1D48C5C700B53EF2 /* AVRecorder.swift in Sources */,
 				BC94E4FE263FE6B80094C169 /* MP4MovieFragmentHeaderBox.swift in Sources */,
+				BCC1A6AD2642D83100661156 /* MP4MovieFragmentBox.Builder.swift in Sources */,
 				29B876B21CD70B2800FC07DA /* RTMPMuxer.swift in Sources */,
 				2958912E1EEB8F4100CE51E1 /* FLVSoundType.swift in Sources */,
 				BC0D236D26331BAB001DDA0C /* NetSocket.CircularBuffer.swift in Sources */,
 				29D3D4D61ED04EAE00DD4AA6 /* DeviceUtil+Extenstion.swift in Sources */,
 				29B876851CD70AE800FC07DA /* NALUnit.swift in Sources */,
+				BCC1A6A52642D2A600661156 /* MP4SegmentFile.Builder.swift in Sources */,
 				29EA87ED1E79A3E30043A5F8 /* CVPixelBuffer+Extension.swift in Sources */,
 				2958912A1EEB8F1D00CE51E1 /* FLVSoundSize.swift in Sources */,
 				BCA97BF4263C390E0027213C /* CustomXmlStringConvertible.swift in Sources */,
@@ -1859,7 +1893,9 @@
 				29EA87E21E79A1E90043A5F8 /* CMVideoFormatDescription+Extension.swift in Sources */,
 				29D3D4D11ED04D1200DD4AA6 /* NetStream+Extension.swift in Sources */,
 				BCA97BE4263C095C0027213C /* MP4TimeToSampleBox.swift in Sources */,
+				BCC1A6992642BE8100661156 /* MP4WriterConvertible.swift in Sources */,
 				BCAD0C21263EFCEF00ADFB80 /* MP4SegmentIndexBox.swift in Sources */,
+				BCC1A69D2642BEAC00661156 /* MP4FragmentedWriter.swift in Sources */,
 				BCAD0C1B263EE1D000ADFB80 /* MP4Util.swift in Sources */,
 				29EA87D81E79A0090043A5F8 /* URL+Extension.swift in Sources */,
 				BCA97B86263AC0F30027213C /* MP4BoxConvertible.swift in Sources */,
@@ -1915,11 +1951,11 @@
 				290EA8A91DFB61E700053022 /* ByteArrayTests.swift in Sources */,
 				295018221FFA1C9D00358E10 /* SinWaveUtil.swift in Sources */,
 				294637A81EC89BC9008EEC71 /* Config.swift in Sources */,
-				295018201FFA1BD700358E10 /* AudioConverterTests.swift in Sources */,
-				BC94E53B2641984F0094C169 /* MP4FileHandleTests.swift in Sources */,
+				295018201FFA1BD700358E10 /* AudioCodecTests.swift in Sources */,
+				BC94E53B2641984F0094C169 /* MP4FileReaderTests.swift in Sources */,
 				290EA8AC1DFB61E700053022 /* MD5Tests.swift in Sources */,
 				290EA8A01DFB61B100053022 /* ASClassTests.swift in Sources */,
-				BC94E53A264192B00094C169 /* MP4FileHandleTests2.swift in Sources */,
+				BC94E53A264192B00094C169 /* MP4FileReaderTests2.swift in Sources */,
 				2917CB662104CA2800F6823A /* AudioSpecificConfigTests.swift in Sources */,
 				290EA8AB1DFB61E700053022 /* EventDispatcherTests.swift in Sources */,
 				290EA8901DFB616000053022 /* Foundation+ExtensionTests.swift in Sources */,
@@ -1948,6 +1984,7 @@
 				29B876EC1CD70D5900FC07DA /* AudioCodec.swift in Sources */,
 				BCA97C0B263D80F40027213C /* MP4SampleEntry.swift in Sources */,
 				29B876ED1CD70D5900FC07DA /* H264Decoder.swift in Sources */,
+				BCC1A6A22642CE2700661156 /* MP4TrackFragmentBox.Builder.swift in Sources */,
 				BC8E32E42532F3700087DF49 /* GLHKView.swift in Sources */,
 				BCB977402621812800C9A649 /* AVCFormatStream.swift in Sources */,
 				29B876EE1CD70D5900FC07DA /* H264Encoder.swift in Sources */,
@@ -1969,6 +2006,7 @@
 				29EA87E71E79A2780043A5F8 /* CMAudioFormatDescription+Extension.swift in Sources */,
 				29FD1B5122FF13190095A0BE /* VTSessionPropertyKey.swift in Sources */,
 				29B876F61CD70D5900FC07DA /* HTTPRequest.swift in Sources */,
+				BCC1A6AA2642D32A00661156 /* MP4File.Builder.swift in Sources */,
 				BC20DF2F2503749C007BC608 /* HKPictureInPicureControllerImpl.swift in Sources */,
 				29B876F71CD70D5900FC07DA /* HTTPResponse.swift in Sources */,
 				BC4C9EB023F2E736004A14F2 /* AudioStreamBasicDescription+Extension.swift in Sources */,
@@ -2005,11 +2043,13 @@
 				295891271EEB8EF300CE51E1 /* FLVAACPacket.swift in Sources */,
 				29B877021CD70D5A00FC07DA /* TSPacket.swift in Sources */,
 				296242641D8DBA9000C451A3 /* TSWriter.swift in Sources */,
+				BCC1A6AE2642D83100661156 /* MP4MovieFragmentBox.Builder.swift in Sources */,
 				2958912F1EEB8F4100CE51E1 /* FLVSoundType.swift in Sources */,
 				BC94E4FF263FE6B80094C169 /* MP4MovieFragmentHeaderBox.swift in Sources */,
 				29B877031CD70D5A00FC07DA /* AudioIOComponent.swift in Sources */,
 				BC0D236E26331BAB001DDA0C /* NetSocket.CircularBuffer.swift in Sources */,
 				29B877051CD70D5A00FC07DA /* AVMixer.swift in Sources */,
+				BCC1A6A62642D2A600661156 /* MP4SegmentFile.Builder.swift in Sources */,
 				294B2D3323785E3800CE7BDC /* CircularBuffer.swift in Sources */,
 				2992D1541ED04A2C008D9DC1 /* VideoIOComponent+Extension-macOS.swift in Sources */,
 				2976A47F1D48FD6900B53EF2 /* AVRecorder.swift in Sources */,
@@ -2033,7 +2073,9 @@
 				296543611D62FE7100734698 /* GLHKView-macOS.swift in Sources */,
 				293B42EA2340B4840086F973 /* RTMPObjectEncoding.swift in Sources */,
 				29DC17B421D0CC0600E26CED /* Atomic.swift in Sources */,
+				BCC1A69A2642BE8100661156 /* MP4WriterConvertible.swift in Sources */,
 				BCA97BE3263C095C0027213C /* MP4TimeToSampleBox.swift in Sources */,
+				BCC1A69E2642BEAC00661156 /* MP4FragmentedWriter.swift in Sources */,
 				BCAD0C22263EFCEF00ADFB80 /* MP4SegmentIndexBox.swift in Sources */,
 				BCAD0C1C263EE1D000ADFB80 /* MP4Util.swift in Sources */,
 				BCA97B87263AC0F30027213C /* MP4BoxConvertible.swift in Sources */,
@@ -2126,6 +2168,8 @@
 				29EB3E101ED0587F001CAE8B /* AVRecorder.swift in Sources */,
 				BCA97C17263D93DC0027213C /* MP4VisualSampleEntry.swift in Sources */,
 				2958910C1EEB8D1800CE51E1 /* FLVReader.swift in Sources */,
+				BCC1A6AF2642D83100661156 /* MP4MovieFragmentBox.Builder.swift in Sources */,
+				BCC1A6A32642CE2700661156 /* MP4TrackFragmentBox.Builder.swift in Sources */,
 				29EB3E0F1ED0587C001CAE8B /* AVMixer.swift in Sources */,
 				BC94E50C263FEBB60094C169 /* MP4TrackRunBox.swift in Sources */,
 				BC94E508263FEA7F0094C169 /* MP4TrackFragmentBaseMediaDecodeTimeBox.swift in Sources */,
@@ -2156,6 +2200,7 @@
 				29EB3E221ED059FD001CAE8B /* RTMPMessage.swift in Sources */,
 				29EB3E001ED05854001CAE8B /* HTTPService.swift in Sources */,
 				29EB3DFF1ED05852001CAE8B /* HTTPResponse.swift in Sources */,
+				BCC1A6AB2642D32A00661156 /* MP4File.Builder.swift in Sources */,
 				29EB3E021ED05858001CAE8B /* M3U.swift in Sources */,
 				29EB3E0D1ED05877001CAE8B /* AudioIOComponent.swift in Sources */,
 				2942A4FA21A9418A004E1BEE /* Running.swift in Sources */,
@@ -2169,6 +2214,7 @@
 				BCAD0C02263E968400ADFB80 /* MP4FileReader.swift in Sources */,
 				BCA97C00263C599C0027213C /* MP4SyncSampleBox.swift in Sources */,
 				2941746D22D069B300A2944F /* AudioEffect.swift in Sources */,
+				BCC1A69B2642BE8100661156 /* MP4WriterConvertible.swift in Sources */,
 				29EB3E151ED0588C001CAE8B /* VideoEffect.swift in Sources */,
 				29EB3E061ED05865001CAE8B /* MP4Reader.swift in Sources */,
 				29EB3E041ED05860001CAE8B /* AVCConfigurationRecord.swift in Sources */,
@@ -2218,12 +2264,14 @@
 				29EB3DF31ED05773001CAE8B /* CMAudioFormatDescription+Extension.swift in Sources */,
 				29EB3DFC1ED057AC001CAE8B /* HTTPRequest.swift in Sources */,
 				29EB3E161ED0588F001CAE8B /* MIME.swift in Sources */,
+				BCC1A6A72642D2A600661156 /* MP4SegmentFile.Builder.swift in Sources */,
 				293B42EB2340B4840086F973 /* RTMPObjectEncoding.swift in Sources */,
 				295891301EEB8F4100CE51E1 /* FLVSoundType.swift in Sources */,
 				295891201EEB8E9600CE51E1 /* FLVSoundRate.swift in Sources */,
 				29EB3DF21ED05770001CAE8B /* DataConvertible.swift in Sources */,
 				29EB3E361ED05A35001CAE8B /* EventDispatcher.swift in Sources */,
 				29EB3E341ED05A30001CAE8B /* CRC32.swift in Sources */,
+				BCC1A69F2642BEAC00661156 /* MP4FragmentedWriter.swift in Sources */,
 				BC566F7025D2ECC500573C4C /* HLSService.swift in Sources */,
 				29FD1B5222FF13190095A0BE /* VTSessionPropertyKey.swift in Sources */,
 				BCAD0C1D263EE1D000ADFB80 /* MP4Util.swift in Sources */,
